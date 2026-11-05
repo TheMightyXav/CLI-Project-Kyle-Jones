@@ -20,5 +20,14 @@ def get_computer_choice():
 
 
 def decide_winner(player, computer):
-    # return "win", "loss", or "tie"
-    pass
+    if player == computer:
+        return "tie"
+    if computer in RULES[player]:
+        return "win"
+    return "loss"
+
+
+# Computer's choice is checked against the two values held in each choice the player could select.
+# If the computer's choice matches one of the values in the dictionary for the player's choice, a win is granted.
+
+# Defaults to loss if neither of the conditions above it are met.
