@@ -31,3 +31,8 @@ def decide_winner(player, computer):
 # If the computer's choice matches one of the values in the dictionary for the player's choice, a win is granted.
 
 # Defaults to loss if neither of the conditions above it are met.
+
+
+def describe_win(winner, loser):
+    verb = RULES[winner][loser]
+    return f"{winner.capitalize()} {verb} {loser.capitalize()}"

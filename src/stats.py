@@ -36,3 +36,13 @@ def record_result(result):
     elif result == "tie":
         stats["ties"] += 1
     save_stats()
+
+
+def show_stats():
+    print("\n=== Overall Stats ===")
+    print(f"Wins:   {stats['wins']}")
+    print(f"Losses: {stats['losses']}")
+    print(f"Ties:   {stats['ties']}")
+
+
+# This function is used to display the overall stats that have been accumulated across every run of this program.
