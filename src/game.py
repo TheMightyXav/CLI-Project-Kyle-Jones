@@ -7,11 +7,11 @@ CHOICES = ["rock", "paper", "scissors", "lizard", "spock"]
 # I prefer Sheldon Cooper's version of the game
 
 RULES = {
-    "rock": ["scissors", "lizard"],
-    "paper": ["rock", "spock"],
-    "scissors": ["paper", "lizard"],
-    "lizard": ["spock", "paper"],
-    "spock": ["scissors", "rock"],
+    "rock": {"scissors": "crushes", "lizard": "crushes"},
+    "paper": {"rock": "covers", "spock": "disproves"},
+    "scissors": {"paper": "cuts", "lizard": "decapitates"},
+    "lizard": {"spock": "poisons", "paper": "eats"},
+    "spock": {"scissors": "smashes", "rock": "vaporizes"},
 }
 
 
