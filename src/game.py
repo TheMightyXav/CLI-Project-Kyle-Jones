@@ -19,6 +19,9 @@ def get_computer_choice():
     return random.choice(CHOICES)
 
 
+# Computer randomly chooses an option from `CHOICES`
+
+
 def decide_winner(player, computer):
     if player == computer:
         return "tie"

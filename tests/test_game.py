@@ -16,6 +16,7 @@ class TestComputerChoice(unittest.TestCase):
         seen = {get_computer_choice() for _ in range(1000)}
         self.assertEqual(seen, set(CHOICES))
 
+    # Computer is tested 1000 to make sure that each choice is included in its decision making
     def test_distribution_is_roughly_even(self):
         counts = {choice: 0 for choice in CHOICES}
         for _ in range(1000):
