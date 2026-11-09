@@ -1,12 +1,35 @@
-# CLI App
+# Rock Paper Scissors Lizard Spock
 
-**The project brief is in [PROJECT.md](./PROJECT.md).** Start there.
+Welcome to the game you didn't know you were waiting to play! This modernized take on a beloved finger game pits you against the computer in a daring pursuit of intellectual dominance.
 
-This file is yours to write. When your project works, replace everything here
-with a description of what you built: what it does, how to run it, and a usage
-example. Write it for someone who has never seen your project before.
+## Can you win against the machine?
 
-For an example of what a finished one looks like, see the
-[Task Manager Case Study](https://github.com/The-Marcy-Lab-School/swe-casestudy-1-cli-task-manager),
-which is a working Python CLI app with investigation questions to work
-through.
+Find out today! See the setup instructions below.
+
+## Requirements
+
+- Python 3.8 or newer
+- No additional packages needed
+
+## Initial Setup Instructions
+
+ - Download or Clone the files on Github
+ - Run the game from the folder that contains `main.py`
+
+## How to play
+
+Choose an option from the main menu:
+
+1. Play new game
+2. View Overall Stats
+3. Exit
+
+During a game, select one of your choices: rock, paper, scissors, lizard, spock.
+
+| Choice   | Beats                |
+|----------|----------------------|
+| rock     | scissors, lizard     |
+| paper    | rock, spock          |
+| scissors | paper, lizard        |
+| lizard   | spock, paper         |
+| spock    | scissors, rock       |
