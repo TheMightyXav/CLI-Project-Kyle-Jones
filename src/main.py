@@ -39,6 +39,8 @@ def play_game():
         else:
             print(f"Both chose {player}. It's a tie!")
 
+        record_result(result)
+
         again = input("\nPlay again? (y/n): ").strip().lower()
         if again != "y":
             print("\nThanks for playing! Returning to the main menu...")
@@ -49,8 +51,23 @@ def play_game():
 # The message printed after the player chooses an option describes how that option interacts with the one chosen by the computer.
 
 
-def main(): ...
+def main():
+    while True:
+        show_menu()
+        choice = input("Choose an option: ").strip()
 
+        if choice == "1":
+            play_game()
+        elif choice == "2":
+            show_stats()
+        elif choice == "3":
+            print("Thanks for playing!")
+            break
+        else:
+            print("Invalid option. Please enter 1, 2, or 3.")
+
+
+# Caller function implemented here.
 
 if __name__ == "__main__":
     main()
